@@ -1,0 +1,37 @@
+{
+  "name": "docSlides.io",
+  "version": "0.1.0",
+  "description": "Google IO 2013 slides skeleton for DocPad.",
+  "homepage": "https://github.com/bevry/twitter-bootstrap.docpad",
+  "keywords": [
+    "docpad-skeleton",
+    "docpad",
+    "slideshow",
+    "html5",
+    "slides"
+  ],
+  "author": "Krishna Chaitanya Telikicherla (http://novogeek.com)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/novogeek/docSlides.io.git"
+  },
+  "engines": {
+    "node": "0.10",
+    "npm": "1.2"
+  },
+  "dependencies": {
+    "docpad": "~6.54.6",
+    "docpad-plugin-coffeescript": "~2.2.3",
+    "docpad-plugin-eco": "~2.0.2",
+    "docpad-plugin-marked": "~2.1.2",
+    "docpad-plugin-partials": "~2.8.1",
+    "marked": "~0.2.9"
+  },
+  "devDependencies": {
+    "docpad-plugin-livereload": "~2.5.3"
+  },
+  "main": "node_modules/docpad/bin/docpad-server",
+  "scripts": {
+    "start": "node_modules/docpad/bin/docpad-server"
+  }
+}

@@ -1,0 +1,10 @@
+<!--
+	Displays a blank white page with image in the center. 
+	Invoke this template by configuring "slideClass: logoCenter" in your slide.md 
+-->
+
+<slide class="logoslide <%= "dark" if @slide.background=='dark' %> nobackground">
+	<article class="flexbox vcenter">
+	  <%- @parseMarkdown(@slide.content) %>
+	</article>
+</slide>

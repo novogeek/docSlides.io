@@ -1,0 +1,9 @@
+<!--Displays a image with caption -->
+<slide>
+    <hgroup>
+	  <h2><%- @slide.title %> </h2>
+    </hgroup>
+    <article>
+      <%- @parseMarkdown(@slide.content) %>
+    </article>
+  </slide>

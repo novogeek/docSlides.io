@@ -1,0 +1,35 @@
+---
+title: 'Home'
+layout: default
+tags: ['page']
+---
+
+<slides class="layout-widescreen">
+
+
+	<!-- Slides are picked from "slides" directory. Templates are applied based on 'template' property in slides: -->
+	<% for slide in @getCollection('slides').findAll().toJSON(): %>
+	
+		<% if slide.template=='titleSlide': %>
+			<%- @partial('titleSlide.html.eco', @, { slide: slide}) %>
+			
+		<% else if slide.template=='thankyou': %>
+			<%- @partial('thankyou.html.eco', @, { slide: slide}) %>
+			
+		<% else if slide.template=='slideWithImage': %>
+			<%- @partial('slideWithImage.html.eco', @, { slide: slide}) %>
+			
+		<% else if slide.template=='logoCenter': %>
+			<%- @partial('logocenter.html.eco', @, { slide: slide }) %>
+			
+		<% else: %>
+			<%- @partial('default.html.eco', @, { slide: slide }) %>
+		<% end %>
+		
+	<% end %>
+
+	<!-- Thank you slide, having presenter contact details --> 
+	
+	<slide class="backdrop"></slide>
+
+</slides>

@@ -1,0 +1,11 @@
+<!-- Thank you slide. Invoked only in documents/index.html.eco -->
+<slide class="thank-you-slide segue nobackground">
+    <aside class="gdbar right"><img src="images/google_developers_icon_128.png"></aside>
+    <article class="flexbox vleft auto-fadein">
+      <h2>&lt;<%- @slide.title %>&gt;</h2>
+	  <p><%-@slide.subtitle%></p>
+    </article>
+	<p>
+		<%- @parseMarkdown(@slide.content) %>
+	</p>
+</slide>

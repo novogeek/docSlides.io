@@ -1,0 +1,10 @@
+<!-- Default template for a slide -->
+<slide>
+	<hgroup>
+	  <h2><%- @slide.title %> </h2>
+	  <h3><%- @slide.subtitle %> </h3>
+	</hgroup>
+	<article class="build">
+		<%- @parseMarkdown(@slide.content) %>
+	</article>
+</slide>
