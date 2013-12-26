@@ -1,4 +1,6 @@
-# [Google-IO 2013 slides](https://code.google.com/p/io-2013-slides/) skeleton for [DocPad](https://github.com/bevry/docpad).
+## [Google-IO 2013 slides](https://code.google.com/p/io-2013-slides/) skeleton for [DocPad](https://github.com/bevry/docpad).
+
+## View demo: [http://novogeek.github.io/docSlides.io](http://novogeek.github.io/docSlides.io)
 
 ## Getting Started
 
